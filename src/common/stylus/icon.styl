@@ -1,0 +1,97 @@
+// 指定名为music-icon的字体，并指定在哪里可以找到它的URL
+@font-face
+  // 后续样式规则中通过该名称来引用该字库
+  font-family: 'music-icon'
+  src: url('../fonts/music-icon.eot?2qevqt')
+  // format ：字体的格式，主要用于浏览器识别，一般有以下几种——truetype,opentype,truetype-aat,embedded-opentype,avg等。
+  src: url('../fonts/music-icon.eot?2qevqt#iefix') format('embedded-opentype'),
+       url('../fonts/music-icon.ttf?2qevqt') format('truetype'),
+       url('../fonts/music-icon.woff?2qevqt') format('woff'),
+       url('../fonts/music-icon.svg?2qevqt#music-icon') format('svg')
+  font-weight: normal
+  font-style: normal
+
+// class^="icon-":开头的字符是icon-
+// class*=" icon-":任意位置包含icon-字符
+[class^="icon-"], [class*=" icon-"]
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'music-icon' !important
+  speak: none
+  font-style: normal
+  font-weight: normal
+  // 把段落设置为小型大写字母字体：
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+
+  /* Better Font Rendering =========== */
+  // 字体抗渲染
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+// class为icon-ok的前面加一个内容e900，应该是一个字体图标。
+.icon-ok:before
+  content: "\e900"
+
+.icon-close:before
+  content: "\e901"
+
+.icon-add:before
+  content: "\e902"
+
+.icon-play-mini:before
+  content: "\e903"
+
+.icon-playlist:before
+  content: "\e904"
+
+.icon-music:before
+  content: "\e905"
+
+.icon-search:before
+  content: "\e906"
+
+.icon-clear:before
+  content: "\e907"
+
+.icon-delete:before
+  content: "\e908"
+
+.icon-favorite:before
+  content: "\e909"
+
+.icon-not-favorite:before
+  content: "\e90a"
+
+.icon-pause:before
+  content: "\e90b"
+
+.icon-play:before
+  content: "\e90c"
+
+.icon-prev:before
+  content: "\e90d"
+
+.icon-loop:before
+  content: "\e90e"
+
+.icon-sequence:before
+  content: "\e90f"
+
+.icon-random:before
+  content: "\e910"
+
+.icon-back:before
+  content: "\e911"
+
+.icon-mine:before
+  content: "\e912"
+
+.icon-next:before
+  content: "\e913"
+
+.icon-dismiss:before
+  content: "\e914"
+
+.icon-pause-mini:before
+  content: "\e915"
